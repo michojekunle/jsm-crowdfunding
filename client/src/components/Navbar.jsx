@@ -25,9 +25,9 @@ const Navbar = () => {
         </ul>
         <div className='flex relative'>
           {toggleMenu ? (
-            <AiOutlineClose/>
+            <AiOutlineClose fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(prev => !prev)}/>
           ) : (
-            <HiMenuAlt4/>
+            <HiMenuAlt4 fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(prev => !prev)}/>
           )}
         </div>
       </div>
